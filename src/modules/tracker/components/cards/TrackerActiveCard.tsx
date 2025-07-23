@@ -261,7 +261,7 @@ const TrackerActiveCardInfoRow = ({ children }: { children: React.ReactNode }) =
     </Stack>
 );
 
-const isUnsetScore = (score: string | number): boolean => !Math.trunc(Number(score));
+const isUnsetScore = (score: string | number): boolean => Number(score) === 0;
 
 export const TrackerActiveCard = ({
     trackRecord,
